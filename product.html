@@ -5,14 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
 </head>
-<body>
+<style>
+ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: bisque;
+
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border: black solid 1px;
+    }
+    li a:hover{
+        background-color: #111;
+    }
+
+
+
+
+
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+</style>
+<body style="background-color: burlywood;">
+
+    <ul>
+        <li><a href="proposal.html">Proposal</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="index.html">Home</a></li>
+
+    </ul>
     <h2>Our Products</h2>
 
     <div class="card">
-        <img src="
+        <img src="images/productwhite.png" alt="White Desk Tray" title="White desk tray"
+        style="width:100%">
+        <h1>Desk Tray</h1>
+        <p class="price">$9.99</p>
+        <p>Self Adhesive Tray Organizer
+
+            CLEAN DESKTOP: Holds a variety of goods for office and life, such as pens, erasers, adapters and headphones. This will help to avoid a messy desktop.
+            
+            HIDDEN STORAGE: Hidden in the bottom of the desktop to avoid misc. items taking up the desktop space. This is removed from your line of sight to create a certain degree of privacy to protect your private storage items.
+            
+            EASY INSTALLATION: It is equipped with self-adhesive surface, the installation is very simple and convenient.
+            
+            DURABILITY: It is made of high quality and durable materials for good wear resistance. The catapult has been rigorously tested, simple to operate and meets the requirements of daily repetitive use.
+            </p>
+            <p><button>Add to Cart</button></p>
 
 
-        
+
+
+
+
     </div>
+    <div class="card">
+        <img src="images/antimicrobial-keyboard-and-mouse_01.png" alt="antimicrobial keyboard and mouse" title="antimicrobialkeyboard"
+        style="width:100%">
+        <h1>Antimicrobial Keyboard and Mouse</h1>
+        <p class="price">$69.99</p>
+        <p>Medical Grade Washable Antimicrobial Keyboard and Mouse Combo
+
+            IP68 Rating
+
+            USB Wired Connection
+
+            Solid White Full size keyboard
+
+            Tactile Mouse
+        
+        </p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
 </body>
 </html>

@@ -5,7 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: bisque;
+
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border: black solid 1px;
+    }
+    li a:hover{
+        background-color: #111;
+    }
+</style>
+
 <body>
+    <ul>
+        <li><a href="proposal.html">Proposal</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="index.html">Home</a></li>
+
+    </ul>
+
+
+
+
+
+
+
+
+
+
     <h1>Checkout</h1>
     <form>
         <label for="Creditcard">Credit Card Number:</label>
@@ -36,77 +81,60 @@
         name="Email"
         placeholder="Email"
         />
+
+        <label for="CVV">CVV</label>
+        <input
+        type="text"
+        id="cvv"
+        name="cvv"
+        placeholder="123"
+        />
     
     <br>
-    
-        <div style="color:blue;">
-            Gender:
-            <label>Male<input type="radio" name="gender" value="male" />
-            </label>
-            <label>Female<input type="radio" name="gender" value="Female" />
+    <h3>Billing Address</h3>
+    <label for="Billingaddress">Street Line</label>
+    <input
+    type="text"
+    id="billingaddress"
+    name="billingaddress"
+    placeholder="45 Washington St."
+    />
 
-            </label>
-        </div>
+    <label for="city">City</label>
+    <input
+    type="text"
+    id="city"
+    name="city"
+    placeholder="Los Angeles"
+    />
+
+    <label for="state">State</label>
+    <input
+    type="text"
+    id="state"
+    name="state"
+    placeholder="California"
+    />
+    
+    <label for="zipcode">Zip Code</label>
+    <input
+    type="text"
+    id="zipcode"
+    name="zipcode"
+    placeholder="34567"
+    />
     </form>
+
     
-    <br>
-    <div style="color: blue;"> My favorite topics are:</div>
-    <div>
-        <input type="checkbox" id="Basic HTML" name="topics" value="BasicHTML" />
-        <label for="BasicHTML">Basic HTML</label>
-    </div>
-    <div>
-        <input type="checkbox" id="CSS" name="topics" value="CSS" />
-        <label for="CSS">CSS</label>
-    </div>
-    <div>
-        <input type="checkbox" id="tables" name="topics" value="tables" />
-        <label for="tables">Tables</label>
-    </div>
+    
+    
 
-    <div>
-        <div style="color:blue;">
-            <label for="grade-select">Which grade do you expect to receive</label>
-        </div>
-        <div>
-            <select name="Grade" id="grade-select">
-                <option value=""> - Please select your grade - </option>
-                <option value="A">A</option>
-                <option value=A->A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="C+">C+</option>
-            </select>
-        </div>
-    </div>
-    <div>
-        <div>
-            <label for="Comments">Leave a reply:</label>
-        </div>
-        <br>
-
-        <div>
-            <textarea
-            id="comments"
-            name="comments"
-            rows="5"
-            cols="25"
-            placeholder="Enter your comment here..."></textarea>
-
-        </div>
         
-
-    </div>
     <br>
     <button type="submit" name="submit-button">
-        <img src="images/mailbox.png"
+        <img src="images/enter-arrow.png"
         height="30"
         alt="submit button" />
-    </button>
-    <button type="refresh" name="refresh">
-        <img src="images/reset.png"
-        height="30"
-        alt="refresh button" />
     </button>
 
 
