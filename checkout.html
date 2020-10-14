@@ -7,8 +7,113 @@
 </head>
 <body>
     <h1>Checkout</h1>
-    <div class="row">
-        <div class="col-75">
-            <div class="container">
+    <form>
+        <label for="Creditcard">Credit Card Number:</label>
+        <input 
+        type="text"
+        id="cardnumber"
+        name="cardnumber"
+        placeholder="1234-5678-9876-4321"
+        />
+    
+    <br>
+    
+        <label for="cardname">Name on Card:</label>
+        <input 
+        type="text"
+        id="nameoncard"
+        name="nameoncard"
+        placeholder="John Smith"
+        />
+    
+    <br>
+
+    
+        <label for="Email">Email:</label>
+        <input 
+        type="text"
+        id="Email"
+        name="Email"
+        placeholder="Email"
+        />
+    
+    <br>
+    
+        <div style="color:blue;">
+            Gender:
+            <label>Male<input type="radio" name="gender" value="male" />
+            </label>
+            <label>Female<input type="radio" name="gender" value="Female" />
+
+            </label>
+        </div>
+    </form>
+    
+    <br>
+    <div style="color: blue;"> My favorite topics are:</div>
+    <div>
+        <input type="checkbox" id="Basic HTML" name="topics" value="BasicHTML" />
+        <label for="BasicHTML">Basic HTML</label>
+    </div>
+    <div>
+        <input type="checkbox" id="CSS" name="topics" value="CSS" />
+        <label for="CSS">CSS</label>
+    </div>
+    <div>
+        <input type="checkbox" id="tables" name="topics" value="tables" />
+        <label for="tables">Tables</label>
+    </div>
+
+    <div>
+        <div style="color:blue;">
+            <label for="grade-select">Which grade do you expect to receive</label>
+        </div>
+        <div>
+            <select name="Grade" id="grade-select">
+                <option value=""> - Please select your grade - </option>
+                <option value="A">A</option>
+                <option value=A->A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <div>
+            <label for="Comments">Leave a reply:</label>
+        </div>
+        <br>
+
+        <div>
+            <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="25"
+            placeholder="Enter your comment here..."></textarea>
+
+        </div>
+        
+
+    </div>
+    <br>
+    <button type="submit" name="submit-button">
+        <img src="images/mailbox.png"
+        height="30"
+        alt="submit button" />
+    </button>
+    <button type="refresh" name="refresh">
+        <img src="images/reset.png"
+        height="30"
+        alt="refresh button" />
+    </button>
+
+
+
+
+
+    </form>
+
 </body>
 </html>
