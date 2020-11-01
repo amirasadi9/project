@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viewing Cart</title>
     <style>
+        h1{
+            text-align: center;
+        }
+
+        ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: bisque;
+
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border: black solid 1px;
+    }
+    li a:hover{
+        background-color: #111;}
+
+
 
         .button{
             background-color: burlywood;
@@ -14,15 +41,28 @@
             font-size: 16px;
             cursor: pointer;
             border-radius: 12px;
-            
+            padding: 15px 32px;
+            margin: 4px 2px;
+
         }
     </style>
 </head>
 <body>
+    <ul>
+    
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="proposal.html">Project Proposal</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+
+    </ul>
 
     <h1>Shopping Cart</h1>
 
-<br>
+<hr>
 <h2>My Cart</h2>  
 
 <a href="product.html" class="button">Continue Shopping</a>
