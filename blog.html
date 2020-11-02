@@ -31,6 +31,25 @@
     li a:hover{
         background-color: #111;
     }
+
+    img{
+        width: 250px;
+    }
+
+
+    .column{
+        float: left;
+        width: 33%;
+        padding: 5px;
+    }
+
+    .row::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
 </style>
 <body>
     <ul>
@@ -57,89 +76,43 @@
 
 
 
-    <div class="WFHsnacks">
-
-        <h1>Drinks and Snacks to be consumed while working from home</h1>
-        <table>
-            <tr>
-                <th>Snack/Drink</th><th>Calories</th><th>Sugar</th><th>Image</th><th>Caffeine</th>
-            </tr>
-            <tr>
-                <td>Milk</td><td>103</td><td>13g</td><td>Image</td><td>0mg</td>
-            </tr>
-            <tr>
-                <td>Green Tea</td><td>2.5</td><td>0g</td><td>image</td><td>40mg</td>
-            </tr>
-            <tr>
-                <td>Coffee</td><td>1</td><td>0g</td><td>Image</td><td>95mg</td>
-            </tr>
-            <tr>
-                <td>Cola</td><td>140</td><td>39g</td><td>Image</td><td>34mg</td>
-            </tr>
-            <tr>
-                <td>Matcha Latte</td><td>190</td><td>24g</td><td>Image</td><td>55mg</td>
-            </tr>
-    
-    
-    
-    
-        </table>
-        </div>
-        <h2>Our favorite choice is a simple coffee for a quick boost of caffeine.</h2>
-        <hr>
-
-        <div>
-            <h1>Best Way to Stay Focused While working from home</h1>
-            <p>These are challenging times for everyone but we have a few simple tips to help you stay productive and focused. 
-                The first thing we recomend to all of our readers it to make a list of all the things you have to do. Once you write everything down put a star next to the 3 most important
-                ones and start tackling those right away. Although it may seem scary seeing all those items on your list, if you are ablew to break them down into small and manageable chunks
-                then you will feel much better.
-            </p>
-            <br>
-            <p>One of the most distracting things for all of us at Amary Office is our phones! Somehow these things always have notifications
-                popping up and they are so distracting for our minds. When we are trying to focus and dive deep into our work the last thing we need 
-                is another distraction. 
-            </p>
-            <img src="images/girlsittingatdesk.jpg" alt="Stay Home Office" title="Work From Home Picture" style="width:500px;height:600px">
-            <br>
-            <p>Normally at work we are able to move around freely, pick ourselves up and grab a drink, or stop by someone's office to chat. All of these 
-                things help us move around and not freeze our bodies up. Staying active is essential to being healthy and remaining alert throughout the day.
-                Now that we are working from home, it has never been easier to take quick breaks to stretch, do a quick walk, or even just stepping out for some sunlight.
-                Whatever activities you choose are fine so long as you are staying active and giving your body and chance to move. 
-            </p>
-            <img src="images/jenny-hill-Io2Zgb3_kdk-unsplash.jpg" alt="Person Running" title="Going for a Run" style="width:100%;height:auto">
-            <br>
+    <div class="row">
+        <div class="column">
+            <h2>Our top choices for snacking while working from home</h2>
             <p>
-                Since we are seeing the same sights every day and sitting at the same desk with the same coffee mug 
-                sometimes it is helpful to make a switch up. Breaking a routine to complete work in a new location or trying a 
-                new item for breakfast or even trying different work outfits all can help your mind have a little rest from all of the 
-                repeated activity. Give yourself flexibility because sometimes that can make all the difference.
+            <a href="firstblog.html">
+                <img title="snacking at home" alt="Nutritious Home Meal" src="images/firstblogcoverphoto.jpg">
+                <div class="centered">Snacking at Home</div>
+            </a>
 
-            </p>
-            <br>
+        </p>
+    </div>
+
+
+    <div class="column">
+        <h2>How to stay focused while working from home</h2>
+        <p>
+            <a href="secondblog.html">
+            <img src="images/girlsittingatdesk.jpg" alt="Stay Home Office" title="Work From Home Picture">
+            </a>
+        </p>
+    </div>
+
+    
+
+    <div class="column">    
+           <h2>Quick and Easy exercises to get you going!</h2>
             <p>
-                Our last tip to stay focused while working from home would be to feed your body with whole nutrient dense food. 
-                This can make or break your productivity because food effects our moods and our appetitie throughout the day.
-                Drinking plenty of water and being conscious of the food you are consuming can be essential to maintaining a balanced
-                life. It is very easy nowadays to stop by the fridge 30 times in between classes or meetings to grab yet another snack, but 
-                you must resist the urge to load your body with high sugar high carb foods that make you feel even worse.
-                Opt in for a bowl of fruit or cup of yogurt next time you get a sugar craving and you will surely be satisfied.
-            </p>
+                <a href="thirdblog.html">
+                <img src="images/jenny-hill-Io2Zgb3_kdk-unsplash.jpg" alt="Person Running" title="Going for a Run">
+            </a>
+        </p>
         </div>
 
-        <div>
-            <h2>Best exercises that you can do from home</h2>
-            <p>To start us off here are some of our top choices for exercises.</p>
-            <ul>
-                <li>Jumping Jacks</li>
-                <li>Pushups</li>
-                <li>Situps</li>
-                <li>Crunches</li>
-                <li>Jogging</li>
-                <li>Lunges</li>
-                <li>Planks</li>
-                    
-            </ul>
         </div>
+
+        
+
+       
 </body>
 </html>
