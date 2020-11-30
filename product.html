@@ -56,6 +56,17 @@
 
     }
 
+    .container{
+        display: flex;
+        align-items: center;
+
+    }
+
+    #salePrice{
+        padding: 10px 20px;
+        margin: 5px;
+    }
+
 
 
 
@@ -101,7 +112,8 @@ body{
 
 
 </style>
-
+<body>
+    <header>
 
     <div class="main">
         <div class="logo">
@@ -117,6 +129,7 @@ body{
     <li><a href="checkout.html">Checkout</a></li>
         </ul>
     </div>
+    </header>
     <h2>Our Products</h2>
 
     <div class="card">
@@ -134,7 +147,7 @@ body{
             
             DURABILITY: It is made of high quality and durable materials for good wear resistance. The catapult has been rigorously tested, simple to operate and meets the requirements of daily repetitive use.
             </p>
-            <p><button>Add to Cart</button></p>
+            <p><a href="cart.html"><button>Add to Cart</button></a></p>
 
 
 
@@ -158,8 +171,26 @@ body{
             Tactile Mouse
         
         </p>
-        <p><button>Add to Cart</button></p>
+        <p><a href="cart.html"><button>Add to Cart</button></a></p>
     </div>
 
+    <div class="container">
+        <div>
+            <button id="salePrice">First Time Customer Sale</button>
+        </div>
+    </div>
+
+    
+
 </body>
+
+
+<script>
+    let salePrice = document.querySelector('#salePrice');
+    let content = document.querySelector("div.card, div.price");
+
+    salePrice.addEventListener('click',() => content.style.color = 'red');
+    
+    
+</script>
 </html>
