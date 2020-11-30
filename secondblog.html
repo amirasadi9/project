@@ -10,28 +10,59 @@
     body{
         background: linear-gradient(to right, #f5af5b 0%, #f5af5b 100%);
     }
+
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .heading{
+        text-shadow:4px 4px 4px white;
+        text-align: center;
+
+    }
+
+    .firstImage{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    .secondImage{
+        float: inline-end;
+    }
+
+    .firstP{
+        
+        text-align: center;
+
+    }
 </style>
 <body>
     <div>
+        <div class="heading">
         <h1>Best Way to Stay Focused While working from home</h1>
+    </div>
+    <div class="firstP">
         <p>These are challenging times for everyone but we have a few simple tips to help you stay productive and focused. 
             The first thing we recomend to all of our readers it to make a list of all the things you have to do. Once you write everything down put a star next to the 3 most important
             ones and start tackling those right away. Although it may seem scary seeing all those items on your list, if you are ablew to break them down into small and manageable chunks
             then you will feel much better.
         </p>
+    </div>
         <br>
         <p>One of the most distracting things for all of us at Amary Office is our phones! Somehow these things always have notifications
             popping up and they are so distracting for our minds. When we are trying to focus and dive deep into our work the last thing we need 
             is another distraction. 
         </p>
-        <img src="images/girlsittingatdesk.jpg" alt="Stay Home Office" title="Work From Home Picture" style="width:500px;height:600px">
+        <img class="firstImage" style="height: 400px" src="images/girlsittingatdesk.jpg" alt="Stay Home Office" title="Work From Home Picture" style="width:500px;height:600px">
         <br>
         <p>Normally at work we are able to move around freely, pick ourselves up and grab a drink, or stop by someone's office to chat. All of these 
             things help us move around and not freeze our bodies up. Staying active is essential to being healthy and remaining alert throughout the day.
             Now that we are working from home, it has never been easier to take quick breaks to stretch, do a quick walk, or even just stepping out for some sunlight.
             Whatever activities you choose are fine so long as you are staying active and giving your body and chance to move. 
         </p>
-        <img src="images/jenny-hill-Io2Zgb3_kdk-unsplash.jpg" alt="Person Running" title="Going for a Run" style="width:100%;height:auto">
+        <img class="secondImage" style="height: 200px" src="images/jenny-hill-Io2Zgb3_kdk-unsplash.jpg" alt="Person Running" title="Going for a Run" style="width:100%;height:auto">
         <br>
         <p>
             Since we are seeing the same sights every day and sitting at the same desk with the same coffee mug 
@@ -50,5 +81,7 @@
             Opt in for a bowl of fruit or cup of yogurt next time you get a sugar craving and you will surely be satisfied.
         </p>
     </div>
+
+    <a href="index.html"><button>Take Me Home</button></a>
 </body>
 </html>
