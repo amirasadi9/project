@@ -8,29 +8,54 @@
 </head>
 <style>
     ul{
+        float: right;
         list-style-type: none;
-        margin: 0;
+        margin-top: 15px;
         padding: 0;
         overflow: hidden;
-        background-color: bisque;
+        
         width:fit-content;
-        margin:auto;
+        margin: auto;
 
     }
-    li{
-        float: left;
+
+    ul li{
+        display: inline-block;
     }
+
     li a{
         display: block;
-        color: black;
+        color: #fff;
         text-align: center;
-        padding: 14px 16px;
+        padding: 5px 20px;
         text-decoration: none;
-        border: black solid 1px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
     }
     li a:hover{
-        background-color: #111;
+        background-color: #fff;
+        color: #000;
+         }
+
+    .logo img{
+        float: left;
+        width: 200px;
+        height: auto;
+        padding-left: 1px;
+
     }
+
+    .main{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    ul li.active a{
+        background-color: #fff;
+        color: #000;
+
+    }
+    
 
     div.column{
         border: 1px solid grey;
@@ -94,16 +119,22 @@
 
 </style>
 <body>
-    <ul>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="images/weblogo.png">
+            </div>
+            <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li class="active"><a href="blog.html">Blog</a></li>
         <li><a href="product.html">Products</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
         <li><a href="proposal.html">Project Proposal</a></li>
         <li><a href="sitemap.html">Sitemap</a></li>
         <li><a href="checkout.html">Checkout</a></li>
-
-    </ul>
+            </ul>
+        </div>
+    
 
 
 

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background: linear-gradient(to right, #f5af5b 0%, #f5af5b 100%);
+        
+    }
+
+    body, button, input{
+        
+        font-weight: 700;
+        letter-spacing: 1.4px;
+    }
+
+    .background{
+        display: flex;
+        height: 100vh;
+
+    }
+
+    .container{
+        flex: 0 1 700px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .screen{
+        position: relative;
+        background-color: darkgray;
+        border-radius: 15px;
+    }
+
+    .screen:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        z-index: -1;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .screen-header{
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: darkgray;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .screen-header-left{
+        margin-right: auto;
+    }
+
+    .screen-header-button{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-right: 3px;
+        border-radius: 8px;
+        background-color: white;
+    }
+
+    .screen-header-button.close{
+        
+        background-color: red;
+    }
+
+    .screen-header-button.maximize{
+        
+        background-color: yellow;
+    }
+
+    .screen-header-button.minimize{
+        
+        background-color: green;
+    }
+
+    .screen-header-right{
+        display: flex;
+    }
+
+    .screen-header-ellipsis{
+        width: 3px;
+        height: 3px;
+        margin-left: 2px;
+        border-radius: 8px;
+        background-color: lightgray;
+    }
+
+    .screen-body{
+        display: flex;
+    }
+
+    .screen-body-item{
+        flex: 1;
+        padding: 50px;
+
+    }
+
+    .screen-body-item.left{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .app-title{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        color: #f5af5b;
+        font-size: 26px;
+    }
+
+    .app-title::after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 25px;
+        height: 4px;
+        background-color: #f5af5b;
+
+    }
+
+    .app-contact{
+        margin-top: auto;
+        font-size: 11px;
+        color: grey;
+    }
+
+    .app-form-group{
+        margin-bottom: 15px;
+    }
+
+    .app-form-group.message{
+        margin-top: 40px;
+    }
+
+    .app-form-group.button{
+        margin-bottom: 0px;
+        text-align: right;
+    }
+
+    .app-form-control{
+        width: 100%;
+        padding: 10px 0;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid grey;
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+        outline: none;
+        transition: border-color 0.2s;
+
+    }
+
+    .app-form-control::placeholder{
+        color: #666;
+    }
+
+    .app-form-control:focus{
+        border-bottom-color: #ddd;
+
+    }
+
+    .app-form-button{
+        background-color: transparent;
+        border: none;
+        color: #f5af5b;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .app-form-button:hover{
+        color: #b913;
+
+    }
+
+    
+
+    ul{
+        float: right;
+        list-style-type: none;
+        margin-top: 15px;
+        padding: 0;
+        overflow: hidden;
+        
+        width:fit-content;
+        margin: auto;
+
+    }
+
+    ul li{
+        display: inline-block;
+    }
+
+    li a{
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 5px 20px;
+        text-decoration: none;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+    }
+    li a:hover{
+        background-color: #fff;
+        color: #000;
+         }
+
+    .logo img{
+        float: left;
+        width: 200px;
+        height: auto;
+        padding-left: 1px;
+
+    }
+
+   
+    
+
+    ul li.active a{
+        background-color: #fff;
+        color: #000;
+    }
+
+
+
+
+</style>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="images/weblogo.png">
+            </div>
+            <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li class="active"><a href="contactus.html">Contact Us</a></li>
+        <li><a href="proposal.html">Project Proposal</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+        </header>
+
+    <div class="background">
+        <div class="container">
+            <div class="screen">
+                <div class="screen-header">
+                    <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                        </div>
+                        <div class="screen-header-right">
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                    </div>
+                </div>
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span>Contact</span>
+                            <span>Us</span>
+                        </div>
+                        <div class="app-contact">Contact Information: support@amary.xyz</div>
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input type="text" class="app-form-control" placeholder="Name">
+                            </div>
+                            <div class="app-form-group">
+                                <input type="text" class="app-form-control" placeholder="Email">
+                            </div>
+
+                            <div class="app-form-group">
+                                <input type="text" class="app-form-control" placeholder="Number">
+                            </div>
+
+                            <div class="app-form-group-message">
+                                <input type="text" class="app-form-control" placeholder="Message">
+                            </div>
+
+                            <div class="app-form-group-button">
+                                <button class="app-form-button">Cancel</button>
+                                <button class="app-form-button">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <br>
+    <br>
+
+    <div class="aboutUs">
+        <h1>About Us</h1>
+        <p>We are Amary Office! We provide the best resourced and products for people looking to maximize their work from home productivity
+            and accomplish their goals. By providing various resourced, tips, and products we love, Amary office is able to provide
+            all of you with wonderful insight into how you can improve your life during these difficult times.
+            We would love to hear from all of you about any questions, comments, or concerns you may have. This may be done with the form below.
+            We sincerely thank you for visiting our site!
+        </p>
+    </div>
+    <br>
+    <br>
+    <div class="map">
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.1604312367217!2d-71.26790174907656!3d42.29644207908922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e381418b1914ef%3A0x4ef71f3899e76a89!2sBabson%20College!5e0!3m2!1sen!2sus!4v1602637969307!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </p>
+    </div>
+</body>
+</html>
