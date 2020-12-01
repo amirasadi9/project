@@ -57,57 +57,82 @@
     }
     
 
-    div.column{
-        border: 1px solid grey;
-    }
+    
 
-    div.column:hover{
-        border: 2px solid black;
-    }
+    
 
-    div.column img{
-        width: 200px;
-        height: 200px;
-        overflow: auto;
+    
 
-    }
+    
 
-    div.description{
-        padding: 8px;
-        text-align: center;
-    }
+    /* new stuff */
 
-    .boxes{
-        padding: 16px;
-        text-align: center;
-        border: 2px solid black;
-        overflow: auto;
-        display: block;
-    }
-
-    .row{
-        margin: 0 auto;
-        width: 69%;
+    *{
+        box-sizing: border-box;
     }
 
     body{
         background: linear-gradient(to right, #f5af5b 0%, #f5af5b 100%);
+        margin: 0;
+        padding: 20px;
     }
 
-    .image{
-        float: left;
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        overflow: auto;
+    .headerBlog{
+        padding: 30px;
+        border: 2px solid black;
+        border-radius: 10px;
     }
+
+    h1{
+        
+        text-align: center;
+        font-size: 50px;
+        margin: 1.5 0px;
+        color: white;
+
+    }
+
+    .left-column{
+        float: left;
+        width: 75%;
+
+    }
+
+    .right-column{
+        width: 25%;
+        float: right;
+        padding-left: 20px;
+    }
+
+    .card{
+        padding: 20px;
+        
+        margin-top: 20px;
+    }
+
+    .card img{
+        width: 200px;
+        height: auto;
+    }
+
+    .right-column .card img{
+        margin-bottom: 10px;
+
+    }
+
+    /* new stuff */
+
+    
 
     .box{
         border: 2px solid black;
     }
+
+    img{
+        height: 200px;
+    }
+
+
 
     
 
@@ -135,53 +160,77 @@
             </ul>
         </div>
         </header>
-    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
+        <div class="headerBlog">
+        <h1>Our Blogs</h1>
+        </div>
+        <div class="row">
+            <div class="left-column">
+                <div class="card">
+                <h2>Drinks and Snacks to be consumed while working from home</h2>
+                <h5>Published On October 17, 2020</h5>
+                <a href="firstblog.html">
+                <img src="images/firstblogcoverphoto.jpg" alt="blog1photo" title="blog1photo"/>
+                </a>
+                <p>Click the image to view the full blog</p>
+                <p>Get a glimpse into the nutrition info of some of your favorite snacks and beverages to see what you can do to have a healthier diet.</p>
+                </div>
+                <div class="card">
+                    <h2>Best Way to Stay Focused While Working from Home</h2>
+                    <h5>Published On October 29, 2020</h5>
+                    <a href="secondblog.html">
+                    <img src="images/girlsittingatdesk.jpg" alt="blog1photo" title="blog1photo"/>
+                    </a>
+                    <p>Click the image to view the full blog</p>
+                    <p>Being at home has negatively impacted our focus. Find out our secrets to be productive and get things done.</p>
+                    </div>
+                    <div class="card">
+                        <h2>Best Exercises That You Can Do From Home</h2>
+                        <h5>Published On November 17, 2020</h5>
+                        <a href="thirdblog.html">
+                        <img src="images/jenny-hill-Io2Zgb3_kdk-unsplash.jpg" alt="blog1photo" title="blog1photo"/>
+                        </a>
+                        <p>Click the image to view the full blog</p>
+                        <p>We show you the quick and easy ones so there's no need to be sad about your gym membership ending.</p>
+                        </div>
 
-
-
-
-
-<div class="box">
-    <div class="row">
-        <div class="column">
-            <div class="boxes">
+            </div>
+            <div class="right-column"></div>
+            <div class="card">
+                <h2>About Me</h2>
+                <img src="images/matcha latte.jpg"/>
+                <p>My name is Amir and this is my website! My favorite new work from home beverage is a matcha latte with oat milk. I hope you enjoy visiting my site. Thanks!</p>
+            </div>
+            <div class="card">
+                <h3>Popular Products</h3>
+                <img src="images/greytray.jpg"/>
+                <img src="images/antimicrobial-keyboard-and-mouse_01.png"/>
+                <img src="images/coffecup.jpg"/>
             
-            <a href="firstblog.html">
-                <img class="image" title="snacking at home" alt="Nutritious Home Meal" src="images/firstblogcoverphoto.jpg">
+            </div>
+            <div class="card">
+                <h3>Let me know what you think...</h3>
+                <p><a href="mailto:support@amary.xyz">Send an email now</a></p>
 
-            </a>
-            <div class="description">Top Snack and Beverage Choices and Nutrition Information</div>
-        
-        </div>
-    </div>
+            </div>
+        </div>    
 
 
-    <div class="column">
-        <div class="boxes">
-            <a href="secondblog.html">
-            <img class="image" src="images/girlsittingatdesk.jpg" alt="Stay Home Office" title="Work From Home Picture">
-            </a>
-            <div class="description">How to Stay Focused While Working at Home</div>
-        </p>
+
+
+
+
+
         </div>
     </div>
 
     
-
-    <div class="column">
-        <div class="boxes">    
-           
-                <a href="thirdblog.html">
-                <img class="image" src="images/jenny-hill-Io2Zgb3_kdk-unsplash.jpg" alt="Person Running" title="Going for a Run">
-            </a>
-            <div class="description">Quick and Easy Exercises to Keep you Energized</div>
-        
-        </div>
-        </div>
-
-        </div>
-        </div>
 
         
 
